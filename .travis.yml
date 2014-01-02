@@ -20,7 +20,7 @@ env:
   - PUPPET_VERSION=3.3.2 # latest 3.3; 
 
 before_install:
-  - travis_retry gem update --system
+  - travis_retry gem update --system 2.1.11
   - travis_retry gem install bundler --pre
   - gem --version
   - bundle --version
